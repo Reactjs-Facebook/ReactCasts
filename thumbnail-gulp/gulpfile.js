@@ -3,7 +3,7 @@ var gutil = require('gulp-util'); //
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
-var reactify = require('reactify');
+var reactify = require('reactify');  //  Reactify works with Browserify in conversting jsx to js
 
 gulp.task('default', function() {
   var bundler = watchify(browserify({
